@@ -1,0 +1,71 @@
+<div class="bg">
+
+    <body class="Head">
+        <h1>ONLINE RAILWAY RESERVATION</h1>
+    </body>
+    <br>
+    <div class="h"> </div>
+    <div class="form-body">
+                    <div class="container">
+                    <form [formGroup]="bookSeats" (ngSubmit)="collect()">
+                <div class="co">
+                    <label>Name :</label>
+                    <input type="text" class="form-control" placeholder="Enter name" formControlName="name">
+                </div>
+                <br>
+                <div class="co">
+                    <label>Email id :</label>
+                    <input type="email" class="form-control" placeholder="Email-id" formControlName="email">
+                <br>
+                </div>
+                <br>
+                <div class="co">
+                    <label>Age :</label>
+                    <input type="number" class="form-control" placeholder="Enter age" formControlName="age">
+                </div>
+                <br>
+                <div class="co">
+                    <label>Select yor Gender :</label>
+                <br>
+                <div>
+                    <input type="radio" id="m" formControlName="gender" value="Male"><label for="m">Male</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="f" formControlName="gender" value="Female"><label for="f">Female</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="o" formControlName="gender" value="Others"><label for="o">Others</label>
+                </div>
+                </div>
+                <br>
+                <br>
+                <div class="co">
+                    <label>Train Name :</label>
+                    <input type="text" class="form-control" placeholder="Train name" formControlName="train">
+                </div>
+                <br>
+                <div class="co">
+                    <label>Date :</label>
+                    <input type="date" class="form-control" formControlName="date">
+                </div>
+                <br>
+                <div class="co">
+                    <label>StartStation :</label>
+                    <input type="text" class="form-control" placeholder="Start station" formControlName="startStation">
+                </div>
+                <br>
+                <div class="co">
+                    <label>Destination :</label>
+                    <input type="text" class="form-control" placeholder="Destination" formControlName="destination">
+                </div>
+                <br>
+                <div class="co">
+                    <label>Seats :</label>
+                    <input type="text" class="form-control" placeholder="Enter seats" formControlName="seats">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary" style="align-items: center;" mat-raised-button color="primary">Book</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+table,
+thead,
+tr,
+th,
+td {
+    border: 1px solid black;
+}
+h1{
+    text-align: center;
+    background-color: rgb(169, 207, 240);
+}
+table{
+    position: absolute;
+    top:35%;
+    left:50%;
+    transform: translate(-65%,-50%);
+}
+.y{
+   position: absolute;
+   top:80%;
+   left: 50%;
+   transform: translate(-20%,-50%);
+}
+.haa{
+    position: absolute;
+   top:80%;
+   left: 40%;
+   transform: translate(-20%,-60%);
+}
+h2{
+    text-align: center;
+    background-color: rgb(180, 223, 198);
+}
+.d{
+    margin: 2px;
+    padding: 2px;
+}
+.u{
+    margin: 2px;
+    padding: 2px;
+}

@@ -1,0 +1,35 @@
+.container{
+    text-align: center;
+}
+table,
+thead,
+tr,
+th,
+td {
+    border: 1px solid black;
+}
+table{
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-70%,-50%);
+}
+h1{
+    text-align: center;
+}
+.btnn{
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-80%,-50%);
+}
+.ddd{
+    margin: 2px 2px 2px 2px;
+}
+h1{
+    background: rgb(116, 212, 159);
+}
+h2{
+    text-align: center;
+    background: rgb(113, 161, 204);
+}

@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background-color: rgb(107, 135, 166);
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.co{
+    padding: 3px;
+}

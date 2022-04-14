@@ -1,0 +1,35 @@
+<div class="bg">
+
+    <body class="Head">
+        <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>
+
+    </body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card border-0 shadow rounded-3 my-5">
+                    <div class="card-body p-4 p-sm-5">
+                        <h2 class="card-title text-center mb-5 fw-light fs-5" style="font: bolder ;">NEW USER REGISTRATION</h2>
+                        <form [formGroup]="adminlog" (ngSubmit)="validate()">
+                            <div class="form-f">
+                            <label for="floatingInput">PhoneNumber :</label>
+                            <input type="text" class="form-control" id="floatingInput" formControlName="Id">
+                        </div>
+                            <div class="form-f">
+                                <label for="floatingInput">Username :</label>
+                                <input type="text" class="form-control" id="floatingInput" formControlName="username">
+                            </div>
+                            <div class="form-f">
+                                <label for="floatingPassword">Password :</label>
+                                <input type="password" class="form-control" id="floatingPassword" formControlName="password">
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn" mat-raised-button color="primary">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

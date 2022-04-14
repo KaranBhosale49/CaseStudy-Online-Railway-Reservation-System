@@ -1,0 +1,29 @@
+table,
+thead,
+tr,
+th,
+td {
+    border: 1px solid black;
+}
+.btnn{
+    margin: 2px;
+}
+.search-query{
+   width: 30%;
+   height: auto;
+}
+table{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+}
+.btn2{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-30%,-50%);
+}
+.bg{
+    background: linear-gradient(120deg, #2691d9, #8e44ad);
+}

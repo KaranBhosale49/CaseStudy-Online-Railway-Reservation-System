@@ -1,0 +1,42 @@
+<div class="Head">
+    <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>.
+</div>
+
+<body>
+    <div class="container">
+        <div class="row"> 
+        <h2 class="card">UPDATE TRAINS</h2>
+         <form [formGroup]="editResto" (ngSubmit)="collection()">
+                    <div class="form">
+                        <label for="floatingInput">Id</label> 
+                        <input type="number" class="form-control" id="floatingInput" formControlName="train_id">                           
+                    </div>
+                    <div class="form">
+                        <label for="floatingInput">Train Name</label>
+                         <input type="text" class="form-control" id="floatingInput" formControlName="train_name">
+                    </div>
+                    <div class="form">
+                        <label for="floatingInput">From</label>
+                        <input type="text" class="form-control" id="floatingInput" formControlName="from">
+                    </div>
+                    <div class="form">
+                        <label for="floatingInput">To</label>
+                        <input type="text" class="form-control" id="floatingInput" formControlName="to">
+                    </div>
+                    <div class="form">
+                        <label for="floatingInput">Cost</label>
+                        <input type="number" class="form-control" id="floatingInput" formControlName="cost">
+                    </div>
+                    <div class="form">
+                        <label for="floatingInput">Seats</label>
+                         <input type="number" class="form-control" id="floatingInput" formControlName="seats">
+                    </div>
+                    <div class="d-grid">
+                       <button type="submit" class="btn btn-primary" mat-raised-button color="primary">Update</button>
+                        <button class="d" routerLink="/Trains" mat-raised-button color="accent">View</button>
+                    </div>
+        </form>            
+    </div>
+    </div>
+
+</body>

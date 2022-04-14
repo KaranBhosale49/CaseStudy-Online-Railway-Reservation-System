@@ -1,0 +1,38 @@
+<div class="Head">
+    <h1>ONLINE RAILWAY RESERVATION SYSTEM</h1>
+</div>
+
+<body>
+    <div class="container">
+        <h2 class="card-title">ADD TRAINS</h2>
+        <form [formGroup]="addTrains" (ngSubmit)="Trains()">
+            <div class="form-floating">
+                <label for="floatingInput">Id : </label>
+                <input type="number" class="form-control" placeholder="train number" id="floatingInput" formControlName="train_id">
+            </div>
+            <div class="form-floating">
+                <label for="floatingInput">Train Name : </label>
+                <input type="text" class="form-control" placeholder="train name" id="floatingInput" formControlName="train_name">
+            </div>
+            <div class="form-floating">
+                <label for="floatingInput">From : </label>
+                <input type="text" class="form-control" placeholder="startstation" id="floatingInput" formControlName="from">
+            </div>
+            <div class="form-floating ">
+                <label for="floatingInput">To : </label>
+                <input type="text" class="form-control" placeholder="destination" id="floatingInput" formControlName="to">
+            </div>
+            <div class="form-floating">
+                <label for="floatingInput">Cost : </label>
+                <input type="number" class="form-control" placeholder="cost per seat" id="floatingInput" formControlName="cost">
+            </div>
+            <div class="form-floating">
+                <label for="floatingInput">Seats : </label>
+                <input type="number" class="form-control" placeholder="total seats" id="floatingInput" formControlName="seats">
+            </div>
+            <div class="d-grid" style="border: 1px;">
+                <button type="submit" class="btn" >Submit</button>
+            </div>
+        </form>
+    </div>
+</body>

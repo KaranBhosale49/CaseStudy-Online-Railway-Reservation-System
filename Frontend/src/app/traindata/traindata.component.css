@@ -1,0 +1,27 @@
+.tab1 {
+    border: solid 2px;
+}
+
+.hom {
+     float: right;
+}
+
+h1 {
+    text-align: center;
+    background: blue;
+    color: aliceblue;
+}
+table{
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-70%,-50%);
+}
+
+table,
+thead,
+tr,
+th,
+td {
+    border: 1px solid black;
+}

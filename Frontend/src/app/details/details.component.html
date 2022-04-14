@@ -1,0 +1,56 @@
+<div class="bg">
+
+    <body class="Head">
+    </body>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div id="custom-search-input">
+                <div class="input-grout col-md-12" style="text-align:center">
+                    <input type="text" class="search-query" placeholder="Enter PNR " name="id" [(ngModel)]="id" />
+                    <span class="input-hroup-btn"><br>
+            <button class="btnn" type="button" mat-raised-button color="primary" (click)="getbookbyid()">search
+                    </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <table class="table table-dark">
+        <thead style="border: 1px;">
+            <tr>
+                <th>PNR </th>
+                <th>NAME</th>
+                <th>EMAILID</th>
+                <th>AGE</th>
+                <th>GENDER</th>
+                <th>TRAIN</th>
+                <th>DATE</th>
+                <th>SOURCE STATION</th>
+                <th>DESTINATION STATION</th>
+                <th>Seats</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="Seats" style="border: 1px;">
+                <td>{{Seats.id}}</td>
+                <td>{{Seats.name}}</td>
+                <td>{{Seats.email}}</td>
+                <td>{{Seats.age}}</td>
+                <td>{{Seats.gender}}</td>
+                <td>{{Seats.train}}</td>
+                <td>{{Seats.date}}</td>
+                <td>{{Seats.startStation}}</td>
+                <td>{{Seats.destination}}</td>
+                <td>{{Seats.seats}}</td>
+                <th><button class="cde"><i (click)="delete(Seats.id)" mat-raised-button color="primary"> CANCEL TICKET</i></button>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button class="btn2" title="Print Screen" alt="Print Screen" onclick="window.print();" target="_blank" style="cursor:pointer;"
+    mat-raised-button color="primary">Print</button>
+</div>

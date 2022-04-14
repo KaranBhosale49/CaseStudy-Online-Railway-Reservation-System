@@ -1,0 +1,22 @@
+input{ 
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid;
+    outline: none;
+}
+h1{
+    text-align: center;
+    background-color: aqua;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.d{
+    margin-top: 4px;
+    margin-left: 2px;
+}
